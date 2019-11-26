@@ -10,7 +10,7 @@ import { PlacesService } from './places.service';
 export class PlaceComponent implements OnInit {
   places = [];
 
-  constructor(private placesService:PlacesService) {
+  constructor(private placesService: PlacesService) {
     this.places = placesService.getPlaces();
   }
 
